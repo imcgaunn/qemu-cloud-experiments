@@ -1,0 +1,7 @@
+
+<as of>
+Wed Nov 24 08:59:16 PM EST 2021
+imcgaunn@xone ~/git/qemu-cloud-stuff
+ % ./boot.sh ./hirsute-server-cloudimg-amd64-disk-kvm.img ./cloudinit/trivial-seed.img
+qemu-system-x86_64: -drive virtio-net-pci=on,netdev=net00: Must specify either driver or file
+i

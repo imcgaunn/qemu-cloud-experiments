@@ -21,5 +21,5 @@ seed="${2}"  # create with cloud-localds -v ./<seed.img> ./user-data /user-meta-
 qemu-system-x86_64 -enable-kvm \
   -drive "file=${disk},if=virtio" \
   -drive "file=${seed},if=virtio,format=raw" \
-  -drive virtio-net-pci,netdev=net00 \
+  -drive virtio-net-pci=on,netdev=net00 \
   -netdev type=user,id=net00 -m 512 -nographic

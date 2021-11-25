@@ -7,6 +7,7 @@ cloudinit/trivial-seed.img : $(METADATA) $(USERDATA)
 	@echo "---"
 	@echo "<userdata>"
 	@cat $(USERDATA)
+	cloud-localds -v cloudinit/trivial-seed.img $(METADATA) $(USERDATA)
 
 clean :
 	-rm -f cloudinit/trivial-seed.img
