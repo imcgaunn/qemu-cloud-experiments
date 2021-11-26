@@ -1,3 +1,5 @@
+.SHELL := /bin/bash
+
 METADATA := cloudinit/trivial-meta-data.yml
 USERDATA := cloudinit/trivial-user-data.yml
 cloudinit/trivial-seed.img : $(METADATA) $(USERDATA)
